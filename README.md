@@ -4,9 +4,18 @@ Tensorflow2.x class for flipflop recurrent neural networks
 
 Custom `TensorFlow 2.x` class for flipflop neural networks
 
+**Install**
+
+```
+pip install ffrnn
+```
+
 **Usage**
+
 Can be passed into `RNN` wrapper as custom `RNNCell`
 ```python
+import tensorflow as tf
+from ffrnn import FF
 tf.keras.layers.RNN(FF(output_dim), input_shape=(seq_len, input_dim))
 ```
 
